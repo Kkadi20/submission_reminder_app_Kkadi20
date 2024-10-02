@@ -4,17 +4,17 @@
 mkdir -p submission_reminder_app
 
 # Create subdirectories
-mkdir -p submission_reminder_app/{scripts,config,logs}
+mkdir -p submission_reminder_app/{app,modules,assets,config}
 
 # Create necessary files
-touch submission_reminder_app/{scripts/reminder.sh,functions.sh,config/config.env,submissions.txt,logs/log.txt}
+touch submission_reminder_app/{app/reminder.sh,modules/functions.sh,assets/submissions.txt,config/config.env,startup.sh}
 
 # append to the  submissions.txt file with 5 additional records
-echo "student1@example.com, Assignment1, 2024-10-01" >> submission_reminder_app/submissions.txt
-echo "student2@example.com, Assignment2, 2024-10-02" >> submission_reminder_app/submissions.txt
-echo "student3@example.com, Assignment3, 2024-10-03" >> submission_reminder_app/submissions.txt
-echo "student4@example.com, Assignment4, 2024-10-04" >> submission_reminder_app/submissions.txt
-echo "student5@example.com, Assignment5, 2024-10-05" >> submission_reminder_app/submissions.txt
+echo "student2@example.com, shell navigation, submitted" >> submission_reminder_app/assets/submissions.txt
+echo "student2@example.com, shell navigation, not submitted" >> submission_reminder_app/assets/submissions.txt
+echo "student3@example.com, shell navigation, submitted" >> submission_reminder_app/assets/submissions.txt
+echo "student4@example.com, shell navigation, submitted" >> submission_reminder_app/assets/submissions.txt
+echo "student5@example.com, shell navigation, not submited" >> submission_reminder_app/assets/submissions.txt
 
 echo "Application environment created successfully."
 

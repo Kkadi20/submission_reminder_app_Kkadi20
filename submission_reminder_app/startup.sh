@@ -3,4 +3,4 @@
 echo "Starting the reminder application..."
 
 # run reminder.sh scripts
-./scripts/reminder.sh
+./app/reminder.sh
